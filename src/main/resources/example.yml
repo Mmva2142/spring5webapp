@@ -1,0 +1,20 @@
+# this is a example
+name: John
+
+names:
+  - John
+  - Paul
+  - Ringo
+
+book:
+  author: Joe Buck
+  publisher: randow house
+
+flag: yes #True,true. no,false,False
+
+str_val: "This is it's quote"
+
+include_new_lines: |
+  asdf asdf asdf
+  asdf asdf asdf
+  asdf asdf asdf
