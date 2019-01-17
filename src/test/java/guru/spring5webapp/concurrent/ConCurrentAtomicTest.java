@@ -11,6 +11,7 @@ import java.util.concurrent.Executors;
 import java.util.concurrent.Semaphore;
 import java.util.concurrent.atomic.AtomicInteger;
 
+// 1-2 并发编程初体验
 // 线程安全，用AtomicInteger两种方法实现
 @Slf4j
 @RunWith(SpringRunner.class)

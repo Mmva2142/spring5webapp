@@ -79,4 +79,16 @@ public class SynchronizedTest {
         exec.execute(SynchronizedTest::staticDecorate);
         exec.execute(SynchronizedTest::staticDecorate);
     }
+
+    @Test
+    public void testStringSplit(){
+        String currentUrl = "http://improxy.icbc.com.cn/dlesite/main?code=xxxxx";
+
+        if(currentUrl.indexOf("improxy") > 0){
+            int idx = currentUrl.indexOf("/dlesite");
+            currentUrl = currentUrl.substring(0,idx) + "/dlfhrel/"+ currentUrl.substring(idx+1);
+            currentUrl = currentUrl.replace("http","https");
+        }
+        System.out.println(currentUrl);
+    }
 }
